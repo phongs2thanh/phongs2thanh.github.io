@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'LexendDeca';
+    src: url('/fonts/LexendDeca.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.ttt-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Há»™p modal */
+.ttt-modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid pink;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px pink;
+}
+
+.ttt-modal-content a {
+    color: deeppink;
+}
+.ttt-modal-content a:hover {
+    color: hotpink;
+}
+#notiContent {
+    white-space: pre-line;
+}
+
+/* NÃºt Ä‘Ã³ng */
+.ttt-close-btn {
+    color: black;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ttt-close-btn:hover {
+    color: red;
+}
+#notiTitle, #notiContent {
+    font-family: LexendDeca;
+    color: #1a1a1a;
+    font-style: normal;
+}
+#notiTitle {
+    font-weight: bold;
+    font-size: 22px;
+}
+#notiContent {
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .ttt-modal-content {
+        width: 90%;  /* TÄƒng kÃ­ch thÆ°á»›c modal trÃªn mobile */
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #notiTitle {
+        font-size: 18px; /* Giáº£m kÃ­ch thÆ°á»›c tiÃªu Ä‘á» */
+    }
+
+    #notiContent {
+        font-size: 14px; /* Giáº£m kÃ­ch thÆ°á»›c ná»™i dung */
+    }
+
+    .ttt-close-btn {
+        font-size: 18px; /* Giáº£m kÃ­ch thÆ°á»›c nÃºt Ä‘Ã³ng */
+    }
+}
